@@ -145,6 +145,102 @@
       "nct_id": "NCT06127043",
       "notes_cn": "第 12 周未达到主要终点（改良 Mayo 评分变化）及关键次要终点。尽管实现 ~90% 致病性 T 细胞耗竭，疗效不足，UC 项目终止。",
       "notes_en": "Failed to meet primary endpoint (mean change in modified Mayo Score) and key secondary endpoints at Week 12. Despite ~90% pathogenic T cell depletion, efficacy was insufficient. UC program discontinued."
+    },
+     {
+      "name_cn": "Obefazimod（ABX464）",
+      "name_en": "Obefazimod (ABX464)",
+      "mechanism_cn": "first-in-class 口服小分子 microRNA-124 增强剂；上调 miR-124 抑制 STAT3/CCL2 信号，减少 Th17 极化和巨噬细胞活化",
+      "mechanism_en": "First-in-class oral microRNA-124 enhancer; upregulates miR-124 to suppress STAT3/CCL2 signaling, reducing Th17 polarization and macrophage activation",
+      "phase": "III期完成",
+      "phase_en": "Phase III Completed",
+      "nct_id": "NCT05507203",
+      "chictr_id": "",
+      "notes_cn": "III期 ABTECT-1/2（n=1,275）达到主要终点，安慰剂调整后第8周临床缓解率16.4%。维持数据支持第44周持续疗效。安全性良好，无新的安全信号。",
+      "notes_en": "Phase 3 ABTECT-1/2 (n=1,275) met primary endpoint, placebo-adjusted Week 8 clinical remission 16.4%. Maintenance data support sustained efficacy through Week 44. Favorable safety profile."
+    },
+    {
+      "name_cn": "Risankizumab（Skyrizi）",
+      "name_en": "Risankizumab (Skyrizi)",
+      "mechanism_cn": "抗 IL-23 p19 单抗；选择性阻断 IL-23 介导的 Th17 炎症通路",
+      "mechanism_en": "Anti-IL-23 p19 monoclonal antibody; selectively blocks IL-23-mediated Th17 inflammatory pathway",
+      "phase": "FDA批准",
+      "phase_en": "FDA Approved",
+      "nct_id": "",
+      "chictr_id": "",
+      "notes_cn": "已获批用于中重度活动性 UC。在既往生物制剂失败患者中，临床缓解率 11.4% vs 安慰剂 4.3%。",
+      "notes_en": "Approved for moderate-to-severe active UC. In biologic-failed patients, clinical remission 11.4% vs placebo 4.3%."
+    },
+    {
+      "name_cn": "Ozanimod（Zeposia）",
+      "name_en": "Ozanimod (Zeposia)",
+      "mechanism_cn": "S1P 受体调节剂（S1P1,5）；将淋巴细胞滞留于淋巴结，减少肠道炎症细胞浸润",
+      "mechanism_en": "S1P receptor modulator (S1P1,5); sequesters lymphocytes in lymph nodes, reducing intestinal inflammatory cell infiltration",
+      "phase": "FDA批准",
+      "phase_en": "FDA Approved",
+      "nct_id": "",
+      "chictr_id": "",
+      "notes_cn": "已获批用于中重度活动性 UC。与 Etrasimod 同属 S1P 受体调节剂类别。",
+      "notes_en": "Approved for moderate-to-severe active UC. Same class as Etrasimod (S1P receptor modulator)."
+    },
+    {
+      "name_cn": "NX-13",
+      "name_en": "NX-13",
+      "mechanism_cn": "口服 gut-restricted NLRP3 炎症小体抑制剂；局部抑制肠道炎症，减少全身暴露",
+      "mechanism_en": "Oral gut-restricted NLRP3 inflammasome inhibitor; locally suppresses intestinal inflammation with minimal systemic exposure",
+      "phase": "II期进行中",
+      "phase_en": "Phase II Ongoing",
+      "nct_id": "",
+      "chictr_id": "",
+      "notes_cn": "gut-restricted 设计旨在最大化肠道局部疗效同时最小化全身免疫抑制。被2025年综述列为UC新兴靶点之一。",
+      "notes_en": "Gut-restricted design aims to maximize local efficacy while minimizing systemic immunosuppression. Listed as an emerging UC target in 2025 review."
+    },
+    {
+      "name_cn": "SOR102",
+      "name_en": "SOR102",
+      "mechanism_cn": "口服 gut-restricted 双功能 vorabody；同时中和 TNF 和 IL-23，局部作用于肠道",
+      "mechanism_en": "Oral gut-restricted bifunctional vorabody; simultaneously neutralizes TNF and IL-23 locally in the gut",
+      "phase": "I期完成",
+      "phase_en": "Phase I Completed",
+      "nct_id": "",
+      "chictr_id": "",
+      "notes_cn": "Phase I：结肠组织中 SOR102-细胞因子复合物浓度较安慰剂增加高达35倍，无全身暴露。初步临床信号提示可能具有生物学活性。",
+      "notes_en": "Phase 1: Up to 35-fold increase in colonic SOR102-cytokine complex concentrations vs placebo, no systemic exposure. Preliminary signals suggest biologic activity."
+    },
+    {
+      "name_cn": "BA2201",
+      "name_en": "BA2201",
+      "mechanism_cn": "TL1A/IL-23 双特异性抗体；同时阻断炎症和纤维化两条通路，长效 Fc 工程改造",
+      "mechanism_en": "TL1A/IL-23 bispecific antibody; dual blockade of inflammation and fibrosis pathways, long-acting Fc engineering",
+      "phase": "IND已受理",
+      "phase_en": "IND Accepted",
+      "nct_id": "",
+      "chictr_id": "",
+      "notes_cn": "博安生物开发，2026年8月CDE IND受理。临床前抗炎药效优于TL1A单抗或IL-23单抗，预期每3个月给药一次。中国首批TL1A/IL-23双抗之一。",
+      "notes_en": "Developed by Boan Biotech, CDE IND accepted Aug 2026. Preclinical anti-inflammatory efficacy superior to TL1A or IL-23 monotherapy. Expected q3-month dosing. Among first TL1A/IL-23 bispecifics in China."
+    },
+    {
+      "name_cn": "Afimkibart",
+      "name_en": "Afimkibart",
+      "mechanism_cn": "抗 TL1A 单抗；靶向 TL1A-DR3 通路，兼具抗炎和潜在抗纤维化作用",
+      "mechanism_en": "Anti-TL1A monoclonal antibody; targets TL1A-DR3 pathway with anti-inflammatory and potential antifibrotic effects",
+      "phase": "II期完成",
+      "phase_en": "Phase II Completed",
+      "nct_id": "",
+      "chictr_id": "",
+      "notes_cn": "TL1A 靶点类别成员，DDW 2026 报告将其与 Tulisokibart、Duvakitug 并列。可能具有直接抗纤维化特性。",
+      "notes_en": "Member of the TL1A class, cited alongside Tulisokibart and Duvakitug at DDW 2026. May have direct antifibrotic properties."
+    },
+    {
+      "name_cn": "HRS-7085",
+      "name_en": "HRS-7085",
+      "mechanism_cn": "口服小分子；具体机制待披露",
+      "mechanism_en": "Oral small molecule; mechanism to be disclosed",
+      "phase": "II期进行中",
+      "phase_en": "Phase II Ongoing",
+      "nct_id": "NCT07760831",
+      "chictr_id": "",
+      "notes_cn": "中国在研口服小分子，II期试验（NCT07760831）评估中重度活动性UC。排除既往JAK抑制剂、抗TNF、抗IL-23治疗患者。",
+      "notes_en": "Chinese oral small molecule, Phase 2 trial (NCT07760831) in moderate-to-severe active UC. Excludes prior JAK inhibitor, anti-TNF, anti-IL-23 therapy."
     }
   ]
 }
