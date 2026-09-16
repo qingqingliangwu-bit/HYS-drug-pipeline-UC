@@ -1,0 +1,95 @@
+name: Update UC Pipeline & Deploy Pages
+
+# ============================================================
+# 触发条件
+# ============================================================
+on:
+  # 定时触发：每周一 UTC 06:00（北京时间 14:00）
+  schedule:
+    - cron: '0 6 * * 1'
+
+  # 支持在 Actions 页面手动触发
+  workflow_dispatch:
+
+  # 当 data.json 或脚本本身被修改时也触发
+  push:
+    branches: [main]
+    paths:
+      - 'data.json'
+      - 'scripts/fetch_trials.py'
+      - '.github/workflows/update.yml'
+
+# ============================================================
+# 权限：允许写入仓库内容和部署 Pages
+# ============================================================
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+# 避免多个工作流同时运行
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+# ============================================================
+# 任务
+# ============================================================
+jobs:
+  # ---------- 任务1：更新数据 ----------
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run update script
+        run: |
+          echo "=== Running fetch_trials.py ==="
+          python scripts/fetch_trials.py
+          echo "=== Script finished ==="
+
+      - name: Commit changes (if any)
+        run: |
+          git config user.name "uc-pipeline-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: auto-update UC drug pipeline data [skip ci]"
+            git push
+            echo "Changes committed and pushed"
+          fi
+
+  # ---------- 任务2：部署 Pages ----------
+  deploy:
+    needs: update
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
