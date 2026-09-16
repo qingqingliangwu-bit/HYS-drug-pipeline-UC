@@ -130,5 +130,217 @@
   </div>
   <div class="footer" id="footer">数据来源：ClinicalTrials.gov · DrugBank · 公开文献 | 自动更新：每周一</div>
 </div>
+<script>
+var DATA = [];
+var LANG = 'cn';
+var SORT_KEY = 'name';
+var SORT_ASC = true;
+
+var i18n = {
+  cn: {
+    title: '溃疡性结肠炎药物研发进展',
+    subtitle: '全球在研与已上市药物/疗法汇总 · Ulcerative Colitis (UC)',
+    search: '搜索药物名称、机制、备注...',
+    allPhases: '全部阶段',
+    thName: '药物',
+    thPhase: '阶段',
+    thMechanism: '作用机制',
+    thNotes: '关键信息',
+    total: '药物总数',
+    approved: '已批准',
+    phase3: 'III期',
+    phase2: 'II期',
+    failed: '失败',
+    footer: '数据来源：ClinicalTrials.gov · DrugBank · 公开文献 | 自动更新：每周一',
+    lastUpdated: '最后更新：'
+  },
+  en: {
+    title: 'Ulcerative Colitis Drug Pipeline',
+    subtitle: 'Global landscape of investigational and approved drugs/therapies · UC',
+    search: 'Search drug name, mechanism, notes...',
+    allPhases: 'All Phases',
+    thName: 'Drug',
+    thPhase: 'Phase',
+    thMechanism: 'Mechanism',
+    thNotes: 'Key Data',
+    total: 'Total Drugs',
+    approved: 'Approved',
+    phase3: 'Phase III',
+    phase2: 'Phase II',
+    failed: 'Failed',
+    footer: 'Sources: ClinicalTrials.gov · DrugBank · Public literature | Auto-updated: Weekly',
+    lastUpdated: 'Last updated: '
+  }
+};
+
+function t(key) {
+  return i18n[LANG][key] || key;
+}
+
+function getPhaseClass(phase) {
+  if (phase.indexOf('批准') >= 0 || phase.indexOf('Approved') >= 0) return 'phase-approved';
+  if (phase.indexOf('失败') >= 0 || phase.indexOf('Failed') >= 0) return 'phase-failed';
+  if (phase.indexOf('III') >= 0) return 'phase-iii';
+  if (phase.indexOf('II') >= 0) return 'phase-ii';
+  if (phase.indexOf('临床前') >= 0 || phase.indexOf('Preclinical') >= 0) return 'phase-preclinical';
+  return 'phase-other';
+}
+
+function renderStats() {
+  var total = DATA.length;
+  var approved = 0, p3 = 0, p2 = 0, failed = 0;
+  for (var i = 0; i < DATA.length; i++) {
+    var p = DATA[i].phase || '';
+    if (p.indexOf('批准') >= 0 || p.indexOf('Approved') >= 0) approved++;
+    if (p.indexOf('III') >= 0) p3++;
+    if (p.indexOf('II') >= 0 && p.indexOf('III') < 0 && p.indexOf('失败') < 0) p2++;
+    if (p.indexOf('失败') >= 0 || p.indexOf('Failed') >= 0) failed++;
+  }
+  var html = '';
+  html += '<div class="stat-card"><div class="num">' + total + '</div><div class="label">' + t('total') + '</div></div>';
+  html += '<div class="stat-card"><div class="num">' + approved + '</div><div class="label">' + t('approved') + '</div></div>';
+  html += '<div class="stat-card"><div class="num">' + p3 + '</div><div class="label">' + t('phase3') + '</div></div>';
+  html += '<div class="stat-card"><div class="num">' + p2 + '</div><div class="label">' + t('phase2') + '</div></div>';
+  html += '<div class="stat-card"><div class="num">' + failed + '</div><div class="label">' + t('failed') + '</div></div>';
+  document.getElementById('stats').innerHTML = html;
+}
+
+function renderTable() {
+  var query = document.getElementById('searchInput').value.toLowerCase().trim();
+  var phaseFilter = document.getElementById('phaseFilter').value;
+  var tbody = document.getElementById('tableBody');
+  var empty = document.getElementById('emptyState');
+
+  var filtered = [];
+  for (var i = 0; i < DATA.length; i++) {
+    var d = DATA[i];
+    var matchSearch = !query ||
+      (d.name_cn || '').toLowerCase().indexOf(query) >= 0 ||
+      (d.name_en || '').toLowerCase().indexOf(query) >= 0 ||
+      (d.mechanism_cn || '').toLowerCase().indexOf(query) >= 0 ||
+      (d.mechanism_en || '').toLowerCase().indexOf(query) >= 0 ||
+      (d.notes_cn || '').toLowerCase().indexOf(query) >= 0 ||
+      (d.notes_en || '').toLowerCase().indexOf(query) >= 0;
+    var matchPhase = true;
+    if (phaseFilter) {
+      matchPhase = (d.phase || '').indexOf(phaseFilter) >= 0;
+    }
+    if (matchSearch && matchPhase) filtered.push(d);
+  }
+
+  filtered.sort(function(a, b) {
+    var va, vb;
+    if (SORT_KEY === 'name') {
+      va = LANG === 'cn' ? (a.name_cn || '') : (a.name_en || '');
+      vb = LANG === 'cn' ? (b.name_cn || '') : (b.name_en || '');
+    } else if (SORT_KEY === 'phase') {
+      var order = { 'FDA批准': 0, 'FDA Approved': 0, 'III期': 1, 'Phase III': 1, 'II期': 2, 'Phase II': 2, 'Ib期': 3, 'Phase Ib': 3, '临床前': 4, 'Preclinical': 4, '失败': 5, 'Failed': 5 };
+      va = order[a.phase] != null ? order[a.phase] : 99;
+      vb = order[b.phase] != null ? order[b.phase] : 99;
+    } else { return 0; }
+    var cmp = (typeof va === 'string') ? va.localeCompare(vb) : (va - vb);
+    return SORT_ASC ? cmp : -cmp;
+  });
+
+  if (filtered.length === 0) {
+    tbody.innerHTML = '';
+    empty.style.display = 'block';
+    return;
+  }
+  empty.style.display = 'none';
+
+  var html = '';
+  for (var j = 0; j < filtered.length; j++) {
+    var d = filtered[j];
+    var name = LANG === 'cn' ? d.name_cn : d.name_en;
+    var nameSub = LANG === 'cn' ? d.name_en : d.name_cn;
+    var mechanism = LANG === 'cn' ? d.mechanism_cn : d.mechanism_en;
+    var notes = LANG === 'cn' ? d.notes_cn : d.notes_en;
+    var phase = LANG === 'cn' ? d.phase : d.phase_en;
+    var cls = getPhaseClass(d.phase || '');
+    var nctHtml = d.nct_id ? ' <a class="nct-link" href="https://clinicaltrials.gov/study/' + d.nct_id + '" target="_blank">' + d.nct_id + ' ↗</a>' : '';
+    html += '<tr>';
+    html += '<td><div class="drug-name">' + name + '</div><div class="drug-name-en">' + nameSub + '</div>' + nctHtml + '</td>';
+    html += '<td><span class="phase-badge ' + cls + '">' + phase + '</span></td>';
+    html += '<td class="mechanism">' + mechanism + '</td>';
+    html += '<td class="notes">' + notes + '</td>';
+    html += '</tr>';
+  }
+  tbody.innerHTML = html;
+}
+
+function updateUIText() {
+  document.getElementById('pageTitle').textContent = t('title');
+  document.getElementById('pageSubtitle').textContent = t('subtitle');
+  document.getElementById('footer').textContent = t('footer');
+  document.getElementById('th-name').textContent = t('thName') + ' ↕';
+  document.getElementById('th-phase').textContent = t('thPhase') + ' ↕';
+  document.getElementById('th-mechanism').textContent = t('thMechanism');
+  document.getElementById('th-notes').textContent = t('thNotes');
+  document.getElementById('searchInput').placeholder = t('search');
+  document.getElementById('phaseFilter').options[0].text = t('allPhases');
+  document.getElementById('langToggle').textContent = LANG === 'cn' ? 'EN' : '中文';
+}
+
+function updateMetaTime(iso) {
+  try {
+    var d = new Date(iso);
+    document.getElementById('pageMeta').textContent = t('lastUpdated') + d.toLocaleString();
+  } catch (e) {
+    document.getElementById('pageMeta').textContent = t('lastUpdated') + iso;
+  }
+}
+
+function loadData() {
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'data.json?t=' + Date.now(), true);
+  xhr.onload = function() {
+    if (xhr.status === 200) {
+      try {
+        var json = JSON.parse(xhr.responseText);
+        DATA = json.drugs || [];
+        updateMetaTime(json.last_updated);
+      } catch (e) {
+        console.error('JSON parse error', e);
+        DATA = [];
+        document.getElementById('pageMeta').textContent = 'data.json parse error';
+      }
+    } else {
+      DATA = [];
+      document.getElementById('pageMeta').textContent = 'data.json not found (' + xhr.status + ')';
+    }
+    renderStats();
+    renderTable();
+    updateUIText();
+  };
+  xhr.onerror = function() {
+    DATA = [];
+    document.getElementById('pageMeta').textContent = 'data.json load failed';
+    renderStats();
+    renderTable();
+    updateUIText();
+  };
+  xhr.send();
+}
+
+document.getElementById('langToggle').addEventListener('click', function() {
+  LANG = LANG === 'cn' ? 'en' : 'cn';
+  renderStats();
+  renderTable();
+  updateUIText();
+});
+document.getElementById('searchInput').addEventListener('input', renderTable);
+document.getElementById('phaseFilter').addEventListener('change', renderTable);
+var ths = document.querySelectorAll('th[data-sort]');
+for (var k = 0; k < ths.length; k++) {
+  ths[k].addEventListener('click', function() {
+    var key = this.getAttribute('data-sort');
+    if (SORT_KEY === key) { SORT_ASC = !SORT_ASC; } else { SORT_KEY = key; SORT_ASC = true; }
+    renderTable();
+  });
+}
+
+loadData();
+</script>
 </body>
 </html>
