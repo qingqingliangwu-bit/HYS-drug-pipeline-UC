@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-16T06:49:40.712424+00:00",
+  "last_updated": "2026-09-16T08:12:52.918544+00:00",
   "disease": "Ulcerative Colitis",
   "disease_cn": "溃疡性结肠炎",
   "drugs": [
@@ -146,7 +146,7 @@
       "notes_cn": "第 12 周未达到主要终点（改良 Mayo 评分变化）及关键次要终点。尽管实现 ~90% 致病性 T 细胞耗竭，疗效不足，UC 项目终止。",
       "notes_en": "Failed to meet primary endpoint (mean change in modified Mayo Score) and key secondary endpoints at Week 12. Despite ~90% pathogenic T cell depletion, efficacy was insufficient. UC program discontinued."
     },
-     {
+    {
       "name_cn": "Obefazimod（ABX464）",
       "name_en": "Obefazimod (ABX464)",
       "mechanism_cn": "first-in-class 口服小分子 microRNA-124 增强剂；上调 miR-124 抑制 STAT3/CCL2 信号，减少 Th17 极化和巨噬细胞活化",
