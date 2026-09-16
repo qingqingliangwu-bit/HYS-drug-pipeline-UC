@@ -241,6 +241,162 @@
       "chictr_id": "",
       "notes_cn": "中国在研口服小分子，II期试验（NCT07760831）评估中重度活动性UC。排除既往JAK抑制剂、抗TNF、抗IL-23治疗患者。",
       "notes_en": "Chinese oral small molecule, Phase 2 trial (NCT07760831) in moderate-to-severe active UC. Excludes prior JAK inhibitor, anti-TNF, anti-IL-23 therapy."
-    }
-  ]
+    },
+    {
+  "name_cn": "利生奇珠单抗（喜开悦®）",
+  "name_en": "Risankizumab (Skyrizi)",
+  "mechanism_cn": "抗 IL-23 p19 单抗；全球首个获批用于 UC 的 IL-23 特异性抑制剂",
+  "mechanism_en": "Anti-IL-23 p19 monoclonal antibody; world's first IL-23-specific inhibitor approved for UC",
+  "phase": "NMPA批准",
+  "phase_en": "NMPA Approved",
+  "nct_id": "",
+  "chictr_id": "",
+  "notes_cn": "艾伯维产品，2026年1月NMPA批准。INSPIRE诱导试验：第12周临床缓解率20.3% vs 安慰剂6.2%。COMMAND维持试验：第52周黏膜愈合率76.2%（360mg）。",
+  "notes_en": "AbbVie product, NMPA approved Jan 2026. INSPIRE induction: Week 12 clinical remission 20.3% vs placebo 6.2%. COMMAND maintenance: Week 52 mucosal healing 76.2% (360mg)."
+},
+ {
+  "name_cn": "维适平®（精氨酸艾曲莫德片）",
+  "name_en": "Velsipity (Etrasimod Arginine)",
+  "mechanism_cn": "新一代高选择性 S1P 受体调节剂；每日一次口服，调控淋巴细胞迁移，促进黏膜愈合",
+  "mechanism_en": "Next-generation highly selective S1P receptor modulator; once-daily oral, modulates lymphocyte migration and promotes mucosal healing",
+  "phase": "NMPA批准",
+  "phase_en": "NMPA Approved",
+  "nct_id": "",
+  "chictr_id": "",
+  "notes_cn": "云顶新耀引进，2026年2月获NMPA批准上市。亚洲多中心III期ENLIGHT UC研究：维持治疗40周临床缓解率48.1%，黏膜愈合率51.9%。销售峰值预测或达50亿元。",
+  "notes_en": "Introduced by Everest Medicines, NMPA approved Feb 2026. Asian multicenter Phase 3 ENLIGHT UC: Week 40 clinical remission 48.1%, mucosal healing 51.9%. Peak sales forecast ~5 billion RMB."
+},
+ {
+  "name_cn": "米吉珠单抗（安妥来利®/安妥来®）",
+  "name_en": "Mirikizumab (Omvoh)",
+  "mechanism_cn": "靶向 IL-23 p19 亚基的高选择性抑制剂；阻断 IBD 核心致病通路",
+  "mechanism_en": "Highly selective IL-23 p19 inhibitor; blocks core IBD pathogenic pathway",
+  "phase": "NMPA批准",
+  "phase_en": "NMPA Approved",
+  "nct_id": "",
+  "chictr_id": "",
+  "notes_cn": "礼来产品，2026年2月NMPA批准，4月在中国上市。LUCENT系列研究支持其疗效，有潜力实现长达3-4年的稳定控制。",
+  "notes_en": "Eli Lilly product, NMPA approved Feb 2026, launched in China Apr 2026. LUCENT studies support efficacy, potential for 3-4 years of stable control."
+},
+{
+  "name_cn": "BA2201",
+  "name_en": "BA2201",
+  "mechanism_cn": "TL1A/IL-23 长效双特异性抗体；同时阻断炎症和纤维化两条通路，长效 Fc 工程改造支持每3个月给药",
+  "mechanism_en": "TL1A/IL-23 long-acting bispecific antibody; dual blockade of inflammation and fibrosis pathways, long-acting Fc engineering supports q3-month dosing",
+  "phase": "IND已受理",
+  "phase_en": "IND Accepted",
+  "nct_id": "",
+  "chictr_id": "",
+  "notes_cn": "博安生物开发，2026年8月CDE IND受理。临床前抗炎药效优于TL1A单抗或IL-23单抗，食蟹猴半衰期支持每3个月给药。中国首批TL1A/IL-23双抗之一。",
+  "notes_en": "Developed by Boan Biotech, CDE IND accepted Aug 2026. Preclinical efficacy superior to TL1A or IL-23 monotherapy, cynomolgus half-life supports q3-month dosing. Among first TL1A/IL-23 bispecifics in China."
+},
+{
+  "name_cn": "AC-101",
+  "name_en": "AC-101",
+  "mechanism_cn": "first-in-class 口服选择性 RIPK2 抑制剂；靶向 NOD-RIPK2 信号通路，调节性细胞死亡机制",
+  "mechanism_en": "First-in-class oral selective RIPK2 inhibitor; targets NOD-RIPK2 signaling pathway, regulatory cell death mechanism",
+  "phase": "Ib/IIa期完成",
+  "phase_en": "Phase Ib/IIa Completed",
+  "nct_id": "",
+  "chictr_id": "",
+  "notes_cn": "爱科诺生物医药（中国苏州）开发。已在澳大利亚和中国完成I期，针对中国中重度UC患者的Ib/IIa期概念验证已完成。已获FDA批准开展II期。UEG Week 2026将公布Ib期数据。",
+  "notes_en": "Developed by Accro Bioscience (Suzhou, China). Phase 1 completed in Australia and China, Phase 1b/2a PoC in Chinese moderate-to-severe UC completed. FDA cleared for Phase 2. Phase 1b data to be presented at UEG Week 2026."
+},
+{
+  "name_cn": "APL-1401",
+  "name_en": "APL-1401",
+  "mechanism_cn": "强效选择性多巴胺β-羟化酶（DBH）抑制剂；全新作用机制用于 UC 治疗",
+  "mechanism_en": "Potent selective dopamine beta-hydroxylase (DBH) inhibitor; novel mechanism for UC treatment",
+  "phase": "Ib期完成",
+  "phase_en": "Phase Ib Completed",
+  "nct_id": "",
+  "chictr_id": "CTR20233635",
+  "notes_cn": "亚虹医药自主开发。Ib期数据（ECC 2025）：120mg组4周临床应答率33.3%，组织学改善率66.7%，安慰剂组无改善。已启动120mg剂量扩展研究评估12周疗效。",
+  "notes_en": "Developed by Asieris Pharmaceuticals. Phase 1b data (ECC 2025): 120mg group Week 4 clinical response 33.3%, histological improvement 66.7%, no improvement in placebo. 120mg dose expansion study initiated to evaluate 12-week efficacy."
+},
+{
+  "name_cn": "SSGJ-627",
+  "name_en": "SSGJ-627",
+  "mechanism_cn": "生物制品；具体靶点待披露",
+  "mechanism_en": "Biologic; target to be disclosed",
+  "phase": "II期进行中",
+  "phase_en": "Phase II Ongoing",
+  "nct_id": "",
+  "chictr_id": "CTR20260817",
+  "notes_cn": "三生国健开发。I期健康受试者研究已完成（CTR20251372），II期中重度UC研究正在进行（CTR20260817），评估安全性、有效性、药代动力学。",
+  "notes_en": "Developed by 3SBio. Phase 1 healthy volunteer study completed (CTR20251372), Phase 2 moderate-to-severe UC study ongoing (CTR20260817), evaluating safety, efficacy, and PK."
+},
+ {
+  "name_cn": "HRS-7085",
+  "name_en": "HRS-7085",
+  "mechanism_cn": "口服小分子；具体机制待披露",
+  "mechanism_en": "Oral small molecule; mechanism to be disclosed",
+  "phase": "II期进行中",
+  "phase_en": "Phase II Ongoing",
+  "nct_id": "NCT07760831",
+  "chictr_id": "",
+  "notes_cn": "恒瑞医药/山东盛迪开发。II期试验（NCT07760831）评估中重度活动性UC，预计主要完成2026年12月。",
+  "notes_en": "Developed by Hengrui/Shandong Suncadia. Phase 2 trial (NCT07760831) in moderate-to-severe active UC, primary completion expected Dec 2026."
+},
+  {
+  "name_cn": "SHR-1139",
+  "name_en": "SHR-1139",
+  "mechanism_cn": "生物制剂；预期通过抑制炎症反应和维持上皮屏障等机制协同增效",
+  "mechanism_en": "Biologic; expected to synergistically inhibit inflammation and maintain epithelial barrier",
+  "phase": "I期进行中",
+  "phase_en": "Phase I Ongoing",
+  "nct_id": "",
+  "chictr_id": "",
+  "notes_cn": "恒瑞医药子公司广东恒瑞开发。2025年9月获NMPA临床试验批准，1类新药。目前国内外尚无同类药物获批上市。",
+  "notes_en": "Developed by Guangdong Hengrui. NMPA clinical trial approval Sep 2025, Class 1 new drug. No similar drug approved globally yet."
+},
+    {
+  "name_cn": "SHR-7590",
+  "name_en": "SHR-7590",
+  "mechanism_cn": "治疗用生物制品；在动物炎症性肠病模型中可有效抑制炎症、改善疾病评分",
+  "mechanism_en": "Therapeutic biologic; effectively inhibits inflammation and improves disease scores in animal IBD models",
+  "phase": "I期进行中",
+  "phase_en": "Phase I Ongoing",
+  "nct_id": "NCT07758101",
+  "chictr_id": "",
+  "notes_cn": "恒瑞医药开发。2026年8月获CDE批准开展UC和CD临床试验。I期首次人体研究（NCT07758101）评估中国健康受试者和中重度UC患者的安全性，预计主要完成2027年1月。",
+  "notes_en": "Developed by Hengrui. CDE approval for UC and CD clinical trials Aug 2026. Phase 1 first-in-human study (NCT07758101) evaluating safety in Chinese healthy participants and moderate-to-severe UC patients, primary completion expected Jan 2027."
+},
+    {
+  "name_cn": "HSK47388",
+  "name_en": "HSK47388",
+  "mechanism_cn": "口服药物；具体机制待披露",
+  "mechanism_en": "Oral drug; mechanism to be disclosed",
+  "phase": "II期进行中",
+  "phase_en": "Phase II Ongoing",
+  "nct_id": "NCT07335055",
+  "chictr_id": "",
+  "notes_cn": "海思科医药集团开发。II期随机双盲安慰剂对照多中心研究（NCT07335055），预计入组150例中重度活动性UC患者，主要完成2027年10月。",
+  "notes_en": "Developed by Haisco Pharmaceutical Group. Phase 2 randomized double-blind placebo-controlled multicenter study (NCT07335055), 150 moderate-to-severe active UC patients, primary completion Oct 2027."
+},
+    {
+  "name_cn": "9MW5211",
+  "name_en": "9MW5211",
+  "mechanism_cn": "高度特异性清除型创新抗体；选择性识别并清除致病性免疫细胞，阻断免疫级联反应",
+  "mechanism_en": "Highly specific depleting antibody; selectively recognizes and depletes pathogenic immune cells, blocking immune cascade",
+  "phase": "I期进行中",
+  "phase_en": "Phase I Ongoing",
+  "nct_id": "",
+  "chictr_id": "",
+  "notes_cn": "迈威生物开发，在其靶点上是全球首款进入临床阶段的候选药物。2026年6月获NMPA批准开展IBD临床试验，此前已获FDA许可。",
+  "notes_en": "Developed by Mabwell. World's first clinical-stage candidate against its target. NMPA approval for IBD clinical trial Jun 2026, previously FDA-cleared."
+},
+  {
+  "name_cn": "TAN-118",
+  "name_en": "TAN-118",
+  "mechanism_cn": "口服小分子；具体机制待披露",
+  "mechanism_en": "Oral small molecule; mechanism to be disclosed",
+  "phase": "IIa期进行中",
+  "phase_en": "Phase IIa Ongoing",
+  "nct_id": "",
+  "chictr_id": "CTR20261165",
+  "notes_cn": "IIa期探索性概念验证临床试验（CTR20261165），评估4周诱导治疗在活动性UC患者中的安全性、耐受性和初步疗效。",
+  "notes_en": "Phase 2a exploratory proof-of-concept trial (CTR20261165), evaluating 4-week induction therapy safety, tolerability, and preliminary efficacy in active UC."
 }
+ ]
+   }
