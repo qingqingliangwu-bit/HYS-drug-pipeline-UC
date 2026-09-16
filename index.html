@@ -92,3 +92,43 @@
     .notes { max-width: 200px; }
     .stats { grid-template-columns: repeat(2, 1fr); }
   }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <button class="lang-toggle" id="langToggle">EN</button>
+    <h1 id="pageTitle">溃疡性结肠炎药物研发进展</h1>
+    <div class="subtitle" id="pageSubtitle">全球在研与已上市药物/疗法汇总 · Ulcerative Colitis (UC)</div>
+    <div class="meta" id="pageMeta">最后更新：加载中...</div>
+  </div>
+  <div class="stats" id="stats"></div>
+  <div class="toolbar">
+    <input type="search" id="searchInput" placeholder="搜索药物名称、机制、备注...">
+    <select id="phaseFilter">
+      <option value="">全部阶段 / All Phases</option>
+      <option value="FDA批准">FDA批准</option>
+      <option value="III期">III期 / Phase III</option>
+      <option value="II期">II期 / Phase II</option>
+      <option value="Ib期">Ib期 / Phase Ib</option>
+      <option value="失败">失败 / Failed</option>
+    </select>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th data-sort="name" id="th-name">药物 / Drug ↕</th>
+          <th data-sort="phase" id="th-phase">阶段 / Phase ↕</th>
+          <th id="th-mechanism">作用机制 / Mechanism</th>
+          <th id="th-notes">关键信息 / Key Data</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+    <div class="empty" id="emptyState" style="display:none;">未找到匹配的药物 / No matching drugs found</div>
+  </div>
+  <div class="footer" id="footer">数据来源：ClinicalTrials.gov · DrugBank · 公开文献 | 自动更新：每周一</div>
+</div>
+</body>
+</html>
