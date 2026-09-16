@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>溃疡性结肠炎药物研发进展 | Ulcerative Colitis Drug Pipeline</title>
+<style>
+  :root {
+    --primary: #1a5276;
+    --primary-light: #2980b9;
+    --bg: #f8fafc;
+    --card-bg: #ffffff;
+    --text: #1e293b;
+    --text-secondary: #64748b;
+    --border: #e2e8f0;
+    --success: #059669;
+    --warning: #d97706;
+    --danger: #dc2626;
+    --radius: 10px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg); color: var(--text); line-height: 1.6;
+  }
+  .container { max-width: 1400px; margin: 0 auto; padding: 24px 20px 60px; }
+  .header {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+    color: #fff; padding: 36px 40px; border-radius: var(--radius);
+    margin-bottom: 28px; position: relative; overflow: hidden;
+  }
+  .header h1 { font-size: 1.6rem; font-weight: 700; margin-bottom: 6px; }
+  .header .subtitle { font-size: 0.95rem; opacity: 0.85; }
+  .header .meta { font-size: 0.8rem; opacity: 0.7; margin-top: 12px; }
+  .lang-toggle {
+    position: absolute; top: 24px; right: 28px;
+    background: rgba(255,255,255,0.18); border: 1px solid rgba(255,255,255,0.35);
+    color: #fff; padding: 6px 16px; border-radius: 20px; cursor: pointer;
+    font-size: 0.8rem;
+  }
+  .lang-toggle:hover { background: rgba(255,255,255,0.3); }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 14px; margin-bottom: 24px; }
+  .stat-card {
+    background: var(--card-bg); border-radius: var(--radius); padding: 18px 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06); border-left: 4px solid var(--primary-light);
+  }
+  .stat-card .num { font-size: 1.6rem; font-weight: 700; color: var(--primary); }
+  .stat-card .label { font-size: 0.78rem; color: var(--text-secondary); margin-top: 2px; }
+  .toolbar {
+    display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 20px;
+    background: var(--card-bg); padding: 16px 20px; border-radius: var(--radius);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  }
+  .toolbar input[type="search"] {
+    flex: 1; min-width: 200px; padding: 10px 16px; border: 1px solid var(--border);
+    border-radius: 8px; font-size: 0.9rem; outline: none;
+  }
+  .toolbar input[type="search"]:focus { border-color: var(--primary-light); }
+  .toolbar select {
+    padding: 10px 14px; border: 1px solid var(--border); border-radius: 8px;
+    font-size: 0.85rem; background: #fff; outline: none; cursor: pointer;
+  }
+  .table-wrap { background: var(--card-bg); border-radius: var(--radius); overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+  thead { background: var(--primary); color: #fff; }
+  th { padding: 14px 16px; text-align: left; font-weight: 600; font-size: 0.82rem; cursor: pointer; white-space: nowrap; }
+  th:hover { background: var(--primary-light); }
+  td { padding: 14px 16px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+  tr:hover { background: #f1f5f9; }
+  .drug-name { font-weight: 600; color: var(--primary); }
+  .drug-name-en { font-size: 0.78rem; color: var(--text-secondary); }
+  .phase-badge { display: inline-block; padding: 3px 10px; border-radius: 12px; font-size: 0.75rem; font-weight: 600; }
+  .phase-approved { background: #d1fae5; color: var(--success); }
+  .phase-iii { background: #dbeafe; color: #1d4ed8; }
+  .phase-ii { background: #fef3c7; color: var(--warning); }
+  .phase-failed { background: #fce7f3; color: #be185d; }
+  .phase-preclinical { background: #f1f5f9; color: var(--text-secondary); }
+  .phase-other { background: #e0e7ff; color: #4338ca; }
+  .mechanism { font-size: 0.82rem; color: var(--text-secondary); line-height: 1.5; }
+  .notes { font-size: 0.8rem; color: var(--text-secondary); line-height: 1.5; max-width: 380px; }
+  .nct-link { font-size: 0.78rem; color: var(--primary-light); text-decoration: none; }
+  .empty { text-align: center; padding: 60px 20px; color: var(--text-secondary); }
+  .footer { text-align: center; margin-top: 32px; font-size: 0.78rem; color: var(--text-secondary); }
+  @media (max-width: 768px) {
+    .container { padding: 12px 12px 40px; }
+    .header { padding: 24px 20px; }
+    .header h1 { font-size: 1.2rem; }
+    .lang-toggle { top: 16px; right: 16px; padding: 4px 12px; font-size: 0.72rem; }
+    .toolbar { flex-direction: column; }
+    th, td { padding: 10px; font-size: 0.8rem; }
+    .notes { max-width: 200px; }
+    .stats { grid-template-columns: repeat(2, 1fr); }
+  }
