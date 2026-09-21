@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-16T08:44:46.540337+00:00",
+  "last_updated": "2026-09-21T06:06:40.733992+00:00",
   "disease": "Ulcerative Colitis",
   "disease_cn": "溃疡性结肠炎",
   "drugs": [
@@ -52,8 +52,8 @@
       "name_en": "Filgotinib (Jyseleca)",
       "mechanism_cn": "JAK1 偏好性抑制剂；抑制 JAK/STAT 通路",
       "mechanism_en": "JAK1-preferential inhibitor; inhibits JAK/STAT pathway",
-      "phase": "III期",
-      "phase_en": "Phase III",
+      "phase": "IV期",
+      "phase_en": "Phase IV",
       "nct_id": "NCT02914522",
       "notes_cn": "SELECTION 试验：2b/3 期双盲随机安慰剂对照，评估诱导和维持治疗。",
       "notes_en": "SELECTION trial: Phase 2b/3 double-blind, randomized, placebo-controlled, evaluating induction and maintenance."
