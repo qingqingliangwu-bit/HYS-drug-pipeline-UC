@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-21T06:06:40.733992+00:00",
+  "last_updated": "2026-09-28T06:06:18.585910+00:00",
   "disease": "Ulcerative Colitis",
   "disease_cn": "溃疡性结肠炎",
   "drugs": [
@@ -41,8 +41,8 @@
       "name_en": "Upadacitinib (Rinvoq)",
       "mechanism_cn": "JAK1 选择性抑制剂；抑制 JAK/STAT 通路 + 间接抑制 NLRP3-IL-1β 轴",
       "mechanism_en": "JAK1-selective inhibitor; inhibits JAK/STAT pathway + indirect inhibition of NLRP3-IL-1β axis",
-      "phase": "FDA批准",
-      "phase_en": "FDA Approved",
+      "phase": "IV期",
+      "phase_en": "Phase IV",
       "nct_id": "NCT04159597",
       "notes_cn": "对 JAK/STAT 和 NLRP3-IL-1β 轴的双重作用可能解释其在 UC 中的优越疗效。",
       "notes_en": "Dual action on JAK/STAT and NLRP3-IL-1β axis may explain superior efficacy in UC."
@@ -85,8 +85,8 @@
       "name_en": "Duvakitug",
       "mechanism_cn": "抗 TL1A 单抗",
       "mechanism_en": "Anti-TL1A monoclonal antibody",
-      "phase": "III期",
-      "phase_en": "Phase III",
+      "phase": "II期",
+      "phase_en": "Phase II",
       "nct_id": "NCT07184996",
       "notes_cn": "SUNSCAPE-1 III 期诱导研究，2025.10 启动，预计 980 例入组，主要完成 2028.5。",
       "notes_en": "SUNSCAPE-1 Phase 3 induction study, started Oct 2025, ~980 enrollment, primary completion May 2028."
