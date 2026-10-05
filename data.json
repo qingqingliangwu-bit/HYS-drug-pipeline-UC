@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-28T06:06:18.585910+00:00",
+  "last_updated": "2026-10-05T06:10:15.436890+00:00",
   "disease": "Ulcerative Colitis",
   "disease_cn": "溃疡性结肠炎",
   "drugs": [
@@ -8,8 +8,8 @@
       "name_en": "Mirikizumab (Omvoh)",
       "mechanism_cn": "抗 IL-23 单抗；抑制 IL-23 介导的炎症通路",
       "mechanism_en": "Anti-IL-23 monoclonal antibody; inhibits IL-23-mediated inflammatory pathways",
-      "phase": "II期",
-      "phase_en": "Phase II",
+      "phase": "IV期",
+      "phase_en": "Phase IV",
       "nct_id": "NCT07483073",
       "notes_cn": "首个获批的 IL-23 抑制剂用于 UC，FDA 2023.10 批准，EMA 2023.5 批准。用于中重度活动性 UC 的二线治疗。",
       "notes_en": "First IL-23 inhibitor approved for UC. FDA approved Oct 2023, EMA approved May 2023. Second-line therapy for moderate-to-severe active UC."
@@ -107,8 +107,8 @@
       "name_en": "JNJ-78934804",
       "mechanism_cn": "联合机制（JNJ-4804）",
       "mechanism_en": "Combination mechanism (JNJ-4804)",
-      "phase": "III期",
-      "phase_en": "Phase III",
+      "phase": "II期",
+      "phase_en": "Phase II",
       "nct_id": "NCT07577856",
       "notes_cn": "III 期头对头 vs Guselkumab，评估第 48 周临床缓解。",
       "notes_en": "Phase 3 head-to-head vs Guselkumab, evaluating Week 48 clinical remission."
@@ -129,8 +129,8 @@
       "name_en": "PALI-2108",
       "mechanism_cn": "PDE4 抑制剂（局部作用）；抑制磷酸二酯酶 4",
       "mechanism_en": "PDE4 inhibitor (locally acting); inhibits phosphodiesterase 4",
-      "phase": "I期",
-      "phase_en": "Phase I",
+      "phase": "II期",
+      "phase_en": "Phase II",
       "nct_id": "NCT07428096",
       "notes_cn": "Ib 期 UC 队列：100%（5/5）临床应答，平均修订 Mayo 评分下降 62.8%。计划 2026 上半年推进 II 期。",
       "notes_en": "Phase 1b UC cohort: 100% (5/5) clinical response, mean modified Mayo score reduction 62.8%. Plans to advance to Phase 2 in H1 2026."
