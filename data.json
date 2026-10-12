@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-05T06:10:15.436890+00:00",
+  "last_updated": "2026-10-12T06:09:38.182579+00:00",
   "disease": "Ulcerative Colitis",
   "disease_cn": "溃疡性结肠炎",
   "drugs": [
@@ -8,8 +8,8 @@
       "name_en": "Mirikizumab (Omvoh)",
       "mechanism_cn": "抗 IL-23 单抗；抑制 IL-23 介导的炎症通路",
       "mechanism_en": "Anti-IL-23 monoclonal antibody; inhibits IL-23-mediated inflammatory pathways",
-      "phase": "IV期",
-      "phase_en": "Phase IV",
+      "phase": "II期",
+      "phase_en": "Phase II",
       "nct_id": "NCT07483073",
       "notes_cn": "首个获批的 IL-23 抑制剂用于 UC，FDA 2023.10 批准，EMA 2023.5 批准。用于中重度活动性 UC 的二线治疗。",
       "notes_en": "First IL-23 inhibitor approved for UC. FDA approved Oct 2023, EMA approved May 2023. Second-line therapy for moderate-to-severe active UC."
@@ -30,8 +30,8 @@
       "name_en": "Guselkumab (Tremfya)",
       "mechanism_cn": "抗 IL-23 单抗；选择性结合 IL-23 p19 亚基",
       "mechanism_en": "Anti-IL-23 monoclonal antibody; selectively binds IL-23 p19 subunit",
-      "phase": "II期",
-      "phase_en": "Phase II",
+      "phase": "IV期",
+      "phase_en": "Phase IV",
       "nct_id": "NCT04033445",
       "notes_cn": "首个且唯一同时提供 SC 和 IV 诱导方案的 IL-23 抑制剂，用于 UC 和 CD。IV 诱导 2024.9 获批，SC 诱导 2025.9 获批。",
       "notes_en": "First and only IL-23 inhibitor offering both SC and IV induction for UC and CD. IV induction approved Sep 2024, SC induction approved Sep 2025."
