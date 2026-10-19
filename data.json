@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-12T06:09:38.182579+00:00",
+  "last_updated": "2026-10-19T06:22:51.135076+00:00",
   "disease": "Ulcerative Colitis",
   "disease_cn": "溃疡性结肠炎",
   "drugs": [
@@ -85,8 +85,8 @@
       "name_en": "Duvakitug",
       "mechanism_cn": "抗 TL1A 单抗",
       "mechanism_en": "Anti-TL1A monoclonal antibody",
-      "phase": "II期",
-      "phase_en": "Phase II",
+      "phase": "III期",
+      "phase_en": "Phase III",
       "nct_id": "NCT07184996",
       "notes_cn": "SUNSCAPE-1 III 期诱导研究，2025.10 启动，预计 980 例入组，主要完成 2028.5。",
       "notes_en": "SUNSCAPE-1 Phase 3 induction study, started Oct 2025, ~980 enrollment, primary completion May 2028."
@@ -107,8 +107,8 @@
       "name_en": "JNJ-78934804",
       "mechanism_cn": "联合机制（JNJ-4804）",
       "mechanism_en": "Combination mechanism (JNJ-4804)",
-      "phase": "II期",
-      "phase_en": "Phase II",
+      "phase": "III期",
+      "phase_en": "Phase III",
       "nct_id": "NCT07577856",
       "notes_cn": "III 期头对头 vs Guselkumab，评估第 48 周临床缓解。",
       "notes_en": "Phase 3 head-to-head vs Guselkumab, evaluating Week 48 clinical remission."
