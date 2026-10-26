@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-19T06:22:51.135076+00:00",
+  "last_updated": "2026-10-26T11:56:33.885280+00:00",
   "disease": "Ulcerative Colitis",
   "disease_cn": "溃疡性结肠炎",
   "drugs": [
@@ -19,8 +19,8 @@
       "name_en": "Etrasimod (Velsipity)",
       "mechanism_cn": "S1P 受体调节剂（S1P1,4,5）；将淋巴细胞滞留于淋巴结，减少肠道炎症 T 细胞浸润",
       "mechanism_en": "S1P receptor modulator (S1P1,4,5); sequesters lymphocytes in lymph nodes, reducing intestinal inflammatory T cell infiltration",
-      "phase": "FDA批准",
-      "phase_en": "FDA Approved",
+      "phase": "III期",
+      "phase_en": "Phase III",
       "nct_id": "NCT07459686",
       "notes_cn": "FDA 2023.10.13 批准，EC 2024.2.19 批准。Elevate UC 52 试验：32% 临床缓解率；Elevate UC 12：26%。",
       "notes_en": "FDA approved Oct 13, 2023; EC approved Feb 19, 2024. Elevate UC 52: 32% clinical remission; Elevate UC 12: 26%."
