@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-16T14:21:15.274078+00:00",
+  "last_updated": "2026-11-23T16:54:34.175711+00:00",
   "disease": "Ulcerative Colitis",
   "disease_cn": "溃疡性结肠炎",
   "drugs": [
@@ -8,8 +8,8 @@
       "name_en": "Mirikizumab (Omvoh)",
       "mechanism_cn": "抗 IL-23 单抗；抑制 IL-23 介导的炎症通路",
       "mechanism_en": "Anti-IL-23 monoclonal antibody; inhibits IL-23-mediated inflammatory pathways",
-      "phase": "IV期",
-      "phase_en": "Phase IV",
+      "phase": "III期",
+      "phase_en": "Phase III",
       "nct_id": "NCT07483073",
       "notes_cn": "首个获批的 IL-23 抑制剂用于 UC，FDA 2023.10 批准，EMA 2023.5 批准。用于中重度活动性 UC 的二线治疗。",
       "notes_en": "First IL-23 inhibitor approved for UC. FDA approved Oct 2023, EMA approved May 2023. Second-line therapy for moderate-to-severe active UC."
@@ -85,8 +85,8 @@
       "name_en": "Duvakitug",
       "mechanism_cn": "抗 TL1A 单抗",
       "mechanism_en": "Anti-TL1A monoclonal antibody",
-      "phase": "II期",
-      "phase_en": "Phase II",
+      "phase": "III期",
+      "phase_en": "Phase III",
       "nct_id": "NCT07184996",
       "notes_cn": "SUNSCAPE-1 III 期诱导研究，2025.10 启动，预计 980 例入组，主要完成 2028.5。",
       "notes_en": "SUNSCAPE-1 Phase 3 induction study, started Oct 2025, ~980 enrollment, primary completion May 2028."
